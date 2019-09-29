@@ -1,0 +1,69 @@
+.admin-cards {
+    box-sizing: border-box;
+	margin: 0px auto;
+	box-shadow: 12px 12px 8px 5px rgba(0, 0, 250, 0.2);
+	position: relative;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.admin-cards:before {
+	position: absolute;
+	content: '';
+	background: rgba(125, 20, 200, 0.9);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+    width: 100%;
+    opacity: 0;
+	z-index: 1;
+	visibility: visible;
+
+	transition: all ease-in 300ms;
+}
+
+.admin-details {
+	visibility: visible;
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	color: white;
+	transition: all ease-in 300ms;
+}
+
+.admin-img {
+    box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	transition: all ease-out 300ms;
+}
+
+.admin-img:hover {
+	transform: scale(1.1);
+}
+
+.admin-details:hover .admin-cards:before:hover{
+    opacity: 1;
+	visibility: visible;
+}
+
+.admin-name {
+	padding: 20px;
+	font-size: 2.5em;
+}
+
+.admin-content {
+	padding: 20px;
+}
+
+.admin-post {
+	font-size: 2em;
+}

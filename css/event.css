@@ -1,0 +1,16 @@
+.event-txt{
+    margin: 2%;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    color: orange;
+}
+
+.event-line{
+    height: 2px;
+    width: 8%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    background-color: black;
+}

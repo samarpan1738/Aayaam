@@ -1,0 +1,48 @@
+.div-about-us {
+	display: flex;
+	height: 500px;
+	margin: 0% 16%;
+	background-color: #121212;
+	box-shadow: 12px 12px 20px 8px rgba(0, 0, 255, 0.2);
+	border-radius: 8px;
+	overflow-x: hidden;
+	font-size: 10px;
+	position: relative;
+}
+
+.img-about-us {
+	background-image: url(../img/IMG-20181004-WA0073.jpg);
+	/* background-color: aqua; */
+	width: 50%;
+	height: 100%;
+	color:white;
+	background-size: cover;
+	background-position-x: right;
+}
+@media(max-width:768px)
+{
+    .div-about-us
+    {
+        flex-direction: column;
+    }
+}
+
+.div-txt {
+	width: 50%;
+	text-align: right;
+	padding: 20px;
+	color: white;
+}
+
+.myh3 {
+	font-size: 3em;
+	color: orange;
+	font-family: 'Comfortaa', cursive;
+	padding-bottom: 10px;
+}
+
+.mytxt {
+	font-size: 2em;
+	padding-top: 10px;
+	font-family: 'Satisfy', cursive;
+}
