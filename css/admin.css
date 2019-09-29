@@ -67,3 +67,8 @@
 .admin-post {
 	font-size: 2em;
 }
+.admin-cards:hover::before,.admin-cards:hover .admin-details
+{
+	visibility: visible;
+	opacity: 1;
+}
