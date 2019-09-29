@@ -19,13 +19,13 @@
     width: 100%;
     opacity: 0;
 	z-index: 1;
-	visibility: visible;
+	visibility: hidden;
 
-	transition: all ease-in 300ms;
+	transition: all ease-in 200ms 100ms;
 }
 
 .admin-details {
-	visibility: visible;
+	visibility: hidden;
 	position: absolute;
 	text-align: center;
 	z-index: 10;
@@ -35,7 +35,7 @@
 	height: 100%;
 	width: 100%;
 	color: white;
-	transition: all ease-in 300ms;
+	transition: all ease-in 200ms 100ms;
 }
 
 .admin-img {
@@ -50,7 +50,7 @@
 	transform: scale(1.1);
 }
 
-.admin-details:hover .admin-cards:before:hover{
+.admin-cards:hover::before, .admin-cards:hover .admin-details {
     opacity: 1;
 	visibility: visible;
 }
